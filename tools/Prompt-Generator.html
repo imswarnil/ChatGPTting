@@ -64,42 +64,53 @@
         </div>
       </div> 
 
-
-   
-
-    
-
-
       <div class="ui container">
-        <div class="ui three column stackable grid">
+        <div class="ui two column stackable grid">
           <div class="column">
             <h1 class="ui header">Heading</h1>
-            <p>
-              Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
-              tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-              fermentum massa justo sit amet risus. Etiam porta sem malesuada
-              magna mollis euismod. Donec sed odio dui.
-            </p>
+            <div class="ui segment">
+              <p>
+                Act As a
+                <div class="ui input" style="display: inline">
+                  <input type="text" placeholder="Youtuber, Developer" id="role">
+                </div>
+                I want you to help me in
+                <div class="ui input" style="display: inline">
+                  <input type="text" placeholder="Make Video, write code, Plan trip" id="action">
+                </div>
+                , so the context behind doing this is
+                <div class="ui input" style="display: inline">
+                  <input type="text" placeholder="I want to make an app, I want to make a video about xyz" id="context">
+                </div>
+                . I also want you to provide me answer based on
+                <div class="ui input" style="display: inline">
+                  <input type="text" placeholder="Style, tone or Something" id="criteria">
+                </div>
+                . Can you please also consider
+                <div class="ui input" style="display: inline">
+                  <input type="text" placeholder="Provide more context, additional information" id="consideration">
+                </div>
+                , now can you provide me
+                <div class="ui input" style="display: inline">
+                  <input type="text" placeholder="Steps, Code, Video, Solution" id="output">
+                </div>
+                for my
+                <div class="ui input" style="display: inline">
+                  <input type="text" placeholder="Question, query, doubt, problem, confusion, requirement" id="problem">
+                </div>
+                in
+                <div class="ui input" style="display: inline">
+                  <input type="text" placeholder="Short way, Long way, In detail" id="response_type">
+                </div>
+              </p>
+              <button class="ui primary button" onclick="generatePrompt()">Generate</button>
+            </div>
+                        
             <div class="ui small basic button">View details &raquo;</div>
           </div>
           <div class="column">
-            <h1 class="ui header">Heading</h1>
-            <p>
-              Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
-              tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-              fermentum massa justo sit amet risus. Etiam porta sem malesuada
-              magna mollis euismod. Donec sed odio dui.
-            </p>
-            <div class="ui small basic button">View details &raquo;</div>
-          </div>
-          <div class="column">
-            <h1 class="ui header">Heading</h1>
-            <p>
-              Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
-              tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-              fermentum massa justo sit amet risus. Etiam porta sem malesuada
-              magna mollis euismod. Donec sed odio dui.
-            </p>
+            <h1 class="ui header">Output</h1>
+            <div id="prompt"></div>
             <div class="ui small basic button">View details &raquo;</div>
           </div>
         </div>
@@ -114,6 +125,21 @@
           $(".ui.toggle.button").click(function() {
             $(".mobile.only.grid .ui.vertical.menu").toggle(100);
           });
+        });
+        
+      </script>
+      <script>
+        $('#generate-btn').click(function() {
+          var role = $('input[name="role"]').val();
+          var task = $('input[name="task"]').val();
+          var context = $('input[name="context"]').val();
+          var style = $('select[name="style"]').val();
+          var additional = $('input[name="additional"]').val();
+          var problem = $('input[name="problem"]').val();
+          var solution = $('input[name="solution"]').val();
+          var solutionType = $('select[name="solution-type"]').val();
+          var prompt = 'Act as a ' + role + ', I want you to help me ' + task + '. The context behind doing this is ' + context + '. Please provide the answer based on ' + style + ' style. Can you please also consider ' + additional + '? Now can you provide me ' + solution + ' for my ' + problem + ' in ' + solutionType + '.';
+          $('#prompt').text(prompt);
         });
       </script>
     </body>
