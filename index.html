@@ -27,6 +27,11 @@
      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1291242080282540"
      crossorigin="anonymous"></script>
 
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha384-/1XN7jHpCpbbEtu0x3en3k1Y/uwnp/vFWpZlq8oNxZU6Qn2a9/zsJFQpfRvWCsfh"
+        crossorigin="anonymous"></script>
+
+
      <!-- <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -107,7 +112,8 @@
               </div>
             </div>
             <div class="card">
-              <div id="ad-container"></div>
+              <div class="ad-container"></div>
+
             </div>
             <div class="card">
               <div class="image">
@@ -128,7 +134,10 @@
               </div>
             </div>
             <div class="card">
-              <div id="ad-container"></div>
+              <div class="ad-container"></div>
+         <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+         </script>
             </div>
             <div class="card">
               <div class="image">
@@ -321,13 +330,16 @@
         // create sidebar and attach to menu open
         $(".ui.sidebar").sidebar("attach events", ".toc.item");
       });
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  var adContainer = document.getElementById("ad-container");
-  var adCode = '<ins class="adsbygoogle" style="display:inline-block;width:200px;height:200px" data-ad-client="ca-pub-1291242080282540" data-ad-slot="4003326983"></ins>';
-  adContainer.innerHTML = adCode;
+      $(document).ready(function() {
+  // Define the ad code
+  var adCode = '<ins class="adsbygoogle" style="display:inline-block;width:200px;height:250px" data-ad-client="ca-pub-1291242080282540" data-ad-slot="4003326983"></ins>';
+
+  // Insert the ad code wherever the ad-container class is used
+  $('.ad-container').html(adCode);
+
+  // Load the Google AdSense script
   (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+});
 
     </script>
   </body>
