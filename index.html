@@ -107,8 +107,8 @@
               </div>
             </div>
             <div class="card">
-             
-              <div class="ad-placeholder"></div>
+              <div id="ad-container"></div>
+
             </div>
             <div class="card">
               <div class="image">
@@ -129,11 +129,7 @@
               </div>
             </div>
             <div class="card">
-         <!-- Mobile Leaderboard (250 * 50) -->
-        <div class="ad-placeholder"></div>
-         <script>
-              (adsbygoogle = window.adsbygoogle || []).push({});
-         </script>
+              <div id="ad-container"></div>
             </div>
             <div class="card">
               <div class="image">
@@ -326,17 +322,14 @@
         // create sidebar and attach to menu open
         $(".ui.sidebar").sidebar("attach events", ".toc.item");
       });
-      // Get all elements with a specific tag
-var elements = document.getElementsByTagName('div');
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  var adContainer = document.getElementById("ad-container");
+  var adCode = '<ins class="adsbygoogle" style="display:inline-block;width:200px;height:250px" data-ad-client="ca-pub-1291242080282540" data-ad-slot="4003326983"></ins>';
+  adContainer.innerHTML = adCode;
+  (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
-// Loop through each element and append the ad code
-for (var i = 0; i < elements.length; i++) {
-  var element = elements[i];
-  if (element.classList.contains('ad-placeholder')) { // check if the element has a specific class
-    var adCode = '<ins class="adsbygoogle" style="display:inline-block;width:200px;height:250px" data-ad-client="ca-pub-1291242080282540" data-ad-slot="4003326983"></ins>';
-    element.innerHTML += adCode;
-  }
-}
     </script>
   </body>
 </html>
