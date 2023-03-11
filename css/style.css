@@ -151,7 +151,7 @@
      align-items: center;
      margin: 0 auto;
      text-align: center;
-     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+     box-shadow: 0px 4px 8px #00a67f75 ;
  }
 
  @media(max-width: 767px) {
