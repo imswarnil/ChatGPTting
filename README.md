@@ -1,3 +1,5 @@
+![alt text](https://github.com/imswarnil/ChatGPT-ting/blob/main/css/Chatgpting.png)
+
 # My ChatGPT Project
 Welcome to the ChatGPT project! This is a website dedicated to ChatGPT, a large language model trained by OpenAI. Our goal is to provide a platform for people to learn about ChatGPT, explore its capabilities, and create useful tools and projects.
 
