@@ -149,6 +149,7 @@
      align-items: center;
      margin: 0 auto;
      text-align: center;
+     border: 7px solid #00a67f;
  }
 
  @media(max-width: 767px) {
