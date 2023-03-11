@@ -141,41 +141,42 @@
  }
 
  .ad-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 300px; /* set a fixed height for the container */
-  }
-  
-  .ad-container .adsbygoogle {
-    max-width: 100%;
-    max-height: 100%;
-  }
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 300px;
+     /* set a fixed height for the container */
+ }
 
-  .chatgpt_adsense {
-    display: block;
-    width: 125px;
-    height: 125px;
-    background-color: #F4F4F4;
-    border: 1px solid #DDD;
-  }
+ .ad-container .adsbygoogle {
+     max-width: 100%;
+     max-height: 100%;
+ }
 
-  /* For larger screens */
-  @media only screen and (min-width: 768px) {
-    .chatgpt_adsense {
-      width: 300px;
-      height: 300px;
-    }
-  }
+ .chatgpt_adsense {
+     display: block;
+     width: 125px;
+     height: 125px;
+     background-color: #F4F4F4;
+     border: 1px solid #DDD;
+ }
 
-  /* For medium-sized screens */
-  @media only screen and (min-width: 480px) and (max-width: 767px) {
-    .chatgpt_adsense {
-      width: 250px;
-      height: 250px;
-    }
-  }
-  
+ /* For larger screens */
+ @media only screen and (min-width: 768px) {
+     .chatgpt_adsense {
+         width: 300px;
+         height: 300px;
+     }
+ }
+
+ /* For medium-sized screens */
+ @media only screen and (min-width: 480px) and (max-width: 767px) {
+     .chatgpt_adsense {
+         width: 250px;
+         height: 250px;
+     }
+ }
+
 
  @media only screen and (max-width: 700px) {
      .ui.fixed.menu {
