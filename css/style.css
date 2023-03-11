@@ -23,13 +23,15 @@
  .masthead h1.ui.header {
      margin-top: 2em;
      margin-bottom: 0em;
-     font-size: 4em;
+     font-size: 3.5em;
      font-weight: normal;
  }
 
  .masthead h2 {
-     font-size: 1.7em;
+     font-size: 1.4em;
      font-weight: normal;
+     margin: 5px;
+     padding: 10px;
  }
 
  .ui.vertical.stripe {
