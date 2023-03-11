@@ -140,42 +140,43 @@
      color: #fff;
  }
 
- .ad-container {
+ .square {
+     width: 250px;
+     height: 250px;
+     border-top: 10px solid #00A67E;
+     border-bottom: 10px solid #00A67E;
+     border-radius: 10px;
+     background-color: #f7f7f7;
      display: flex;
      justify-content: center;
      align-items: center;
-     height: 300px;
-     /* set a fixed height for the container */
+     margin: 0 auto;
+     text-align: center;
+     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
  }
 
- .ad-container .adsbygoogle {
-     max-width: 100%;
-     max-height: 100%;
- }
-
- .chatgpt_adsense {
-     display: block;
-     width: 125px;
-     height: 125px;
-     background-color: #F4F4F4;
-     border: 1px solid #DDD;
- }
-
- /* For larger screens */
- @media only screen and (min-width: 768px) {
-     .chatgpt_adsense {
-         width: 300px;
-         height: 300px;
+ @media(max-width: 767px) {
+     .square {
+         width: 125px;
+         height: 125px;
      }
  }
 
- /* For medium-sized screens */
- @media only screen and (min-width: 480px) and (max-width: 767px) {
-     .chatgpt_adsense {
+ @media(min-width: 768px) and (max-width: 991px) {
+     .square {
+         width: 200px;
+         height: 200px;
+     }
+ }
+
+ @media(min-width: 992px) {
+     .square {
          width: 250px;
          height: 250px;
      }
  }
+
+
 
 
  @media only screen and (max-width: 700px) {
