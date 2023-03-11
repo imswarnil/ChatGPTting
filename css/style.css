@@ -140,43 +140,6 @@
      color: #fff;
  }
 
- .square {
-     width: 50%;
-     height: 60%;
-     background-color: #f7f7f7;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     margin: 0 auto;
-     text-align: center;
-     border: 2.5% solid #00a67f;
- }
-
- @media(max-width: 767px) {
-     .square {
-         width: 25%;
-         height: 25%;
-     }
- }
-
- @media(min-width: 768px) and (max-width: 991px) {
-     .square {
-         width: 40%;
-         height: 40%;
-     }
- }
-
- @media(min-width: 992px) {
-     .square {
-         width: 40%;
-         height: 40%;
-     }
- }
-
-
-
-
-
  @media only screen and (max-width: 700px) {
      .ui.fixed.menu {
          display: none !important;
