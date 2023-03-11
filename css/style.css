@@ -143,7 +143,7 @@
  .square {
      width: 200px;
      height: 200px;
-     border-top: 5px inset #00A67E;
+     border-top: 5px dashed #00A67E;
      border-radius: 5px;
      background-color: #f7f7f7;
      display: flex;
