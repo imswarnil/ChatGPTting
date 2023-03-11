@@ -143,9 +143,8 @@
  .square {
      width: 200px;
      height: 200px;
-     border-top: 10px solid #00A67E;
-     border-bottom: 10px solid #00A67E;
-     border-radius: 10px;
+     border-top: 5px inset #00A67E;
+     border-radius: 5px;
      background-color: #f7f7f7;
      display: flex;
      justify-content: center;
