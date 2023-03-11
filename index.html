@@ -96,7 +96,7 @@
         </div>
 
         <div class="ui container">
-          <div class="ui doubling five cards">
+          <div class="ui doubling six cards">
             <div class="card">
               <div class="image">
                 <img src="https://via.placeholder.com/300x300" alt="Card Image">
@@ -105,6 +105,10 @@
               <div class="content">
                 <a class="header">Card 1</a>
               </div>
+            </div>
+            <div class="card">
+             
+              <div class="ad-placeholder"></div>
             </div>
             <div class="card">
               <div class="image">
@@ -126,10 +130,7 @@
             </div>
             <div class="card">
          <!-- Mobile Leaderboard (250 * 50) -->
-         <ins class="adsbygoogle"
-              style="display:inline-block;width:200px;height:250px"
-              data-ad-client="ca-pub-1291242080282540"
-              data-ad-slot="4003326983"></ins>
+        <div class="ad-placeholder"></div>
          <script>
               (adsbygoogle = window.adsbygoogle || []).push({});
          </script>
@@ -325,6 +326,17 @@
         // create sidebar and attach to menu open
         $(".ui.sidebar").sidebar("attach events", ".toc.item");
       });
+      // Get all elements with a specific tag
+var elements = document.getElementsByTagName('div');
+
+// Loop through each element and append the ad code
+for (var i = 0; i < elements.length; i++) {
+  var element = elements[i];
+  if (element.classList.contains('ad-placeholder')) { // check if the element has a specific class
+    var adCode = '<ins class="adsbygoogle" style="display:inline-block;width:200px;height:250px" data-ad-client="ca-pub-1291242080282540" data-ad-slot="4003326983"></ins>';
+    element.innerHTML += adCode;
+  }
+}
     </script>
   </body>
 </html>
