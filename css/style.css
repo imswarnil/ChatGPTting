@@ -141,8 +141,8 @@
  }
 
  .square {
-     width: 250px;
-     height: 250px;
+     width: 200px;
+     height: 200px;
      border-top: 10px solid #00A67E;
      border-bottom: 10px solid #00A67E;
      border-radius: 10px;
