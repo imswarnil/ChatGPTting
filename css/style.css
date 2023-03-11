@@ -76,6 +76,11 @@
      display: none;
  }
 
+ .ui.primary.button
+ {
+    background-color: #00A67E;
+ }
+
  @media only screen and (max-width: 700px) {
      .ui.fixed.menu {
          display: none !important;
